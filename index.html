@@ -394,8 +394,8 @@
     <script>
         // ⚠️ 실제 배포 시에는 환경변수를 사용하세요!
         // 아래 값들을 본인의 Supabase 프로젝트 정보로 변경해주세요
-        const SUPABASE_URL = 'https://qvoykdovekvbkdwkyigb.supabase.co'; // 예: https://xxxxxxxxxxx.supabase.co
-        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF2b3lrZG92ZWt2Ymtkd2t5aWdiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg3MjQyOTYsImV4cCI6MjA3NDMwMDI5Nn0.vaRaGRWQOl1JheF2RLP5d_5zVweKDJOAdaXkYwngi98';
+        const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL; // 예: https://xxxxxxxxxxx.supabase.co
+        const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
         
         // Supabase 클라이언트 초기화
         let supabase;
